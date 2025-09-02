@@ -182,8 +182,7 @@ jsonpath-ng
 markdown-it-py 
 MarkupSafe
 mdit-py-plugins
-mdurl 
-menuinst 
+mdurl  
 meson
 ml_dtypes
 mlflow
@@ -284,7 +283,7 @@ termcolor==3.1.0
 threadpoolctl==3.6.0
 tifffile==2025.8.28
 tiktoken==0.11.0
-tk==0.1.0
+tk
 tokenizers
 tomli 
 torch==2.8.0
@@ -298,13 +297,13 @@ typing-inspection
 typing_extensions 
 tzdata
 uc-micro-py==1.0.3
-ui-tars==0.2.3
+ui-tars
 urllib3 
-uv==0.8.14
+uv
 uvicorn==0.35.0
 waitress==3.0.2
 wcwidth==0.2.13
-webencodings==0.5.1
+webencodings
 Werkzeug
 wheel==0.45.1
 win_inet_pton
