@@ -161,7 +161,6 @@ keyring
 kiwisolver
 lazy_loader
 libclang
-libmambapy 
 linkify-it-py
 litellm
 llmv

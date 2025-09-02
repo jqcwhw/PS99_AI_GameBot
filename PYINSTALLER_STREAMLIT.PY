@@ -1,0 +1,1 @@
+pyinstaller --collect-all streamlit-desktop-app --copy-metadata streamlit --name "PS99_AI_GAMEBOT" --onefile --windowed main.py
