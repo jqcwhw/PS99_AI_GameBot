@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Item Mapper - Game Bot</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link href="{{ url_for('static', filename='style.css') }}" rel="stylesheet">
+</head>
+<body>
+    <nav class="navbar navbar-dark bg-primary">
+        <div class="container-fluid">
+            <span class="navbar-brand mb-0 h1">
+                <i class="fas fa-map-marker-alt me-2"></i>AI Item Mapper
+            </span>
+            <div class="d-flex">
+                <a href="/" class="btn btn-outline-light btn-sm me-2">
+                    <i class="fas fa-arrow-left me-1"></i>Back to Dashboard
+                </a>
+                <span class="badge bg-success me-2" id="status-badge">Ready</span>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container-fluid mt-3">
+        <div class="row">
+            <!-- Item Mapping Controls -->
+            <div class="col-md-4">
+                <!-- Screen Detection Panel -->
+                <div class="card mb-3">
+                    <div class="card-header">
+                        <h5><i class="fas fa-desktop me-2"></i>Screen Detection</h5>
+                    </div>
+                    <div class="card-body">
+                        <div class="mb-3">
+                            <button class="btn btn-primary w-100" id="detectGameBtn">
+                                <i class="fas fa-search me-2"></i>Detect Game Window
+                            </button>
+                        </div>
+                        <div class="alert alert-info" id="detectionStatus">
+                            <i class="fas fa-info-circle me-2"></i>
+                            <span id="detectionText">Click detect to find game window</span>
+                        </div>
+                        <div class="form-check mb-3">
+                            <input class="form-check-input" type="checkbox" id="windowLockEnabled">
+                            <label class="form-check-label" for="windowLockEnabled">
+                                Lock to Game Window Only
+                            </label>
+                        </div>
+                        <div class="row">
+                            <div class="col-6">
+                                <small class="text-muted">Window Size:</small>
+                                <div id="windowSize">Unknown</div>
+                            </div>
+                            <div class="col-6">
+                                <small class="text-muted">Position:</small>
+                                <div id="windowPosition">Unknown</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Item Mapping Panel -->
+                <div class="card mb-3">
+                    <div class="card-header">
+                        <h5><i class="fas fa-map me-2"></i>Item Mapping</h5>
+                    </div>
+                    <div class="card-body">
+                        <div class="mb-3">
+                            <label for="itemTypeSelect" class="form-label">Select Item Type</label>
+                            <select class="form-select" id="itemTypeSelect">
+                                <option value="">Choose item to map...</option>
+                                <option value="chest">🎁 Chests</option>
+                                <option value="egg">🥚 Eggs to Hatch</option>
+                                <option value="breakable">💎 Breakable Areas</option>
+                                <option value="path">🛤️ Movement Path</option>
+                                <option value="border">🚧 Game Border/Boundary</option>
+                                <option value="inventory">🎒 Inventory Icon</option>
+                                <option value="auto_hatch">⚡ Auto Hatch Icon</option>
+                                <option value="pet">🐾 Pet Icons</option>
+                                <option value="coin">💰 Coin/Currency</option>
+                                <option value="button">🔲 Game Buttons</option>
+                                <option value="menu">📋 Menu Items</option>
+                                <option value="custom">🎯 Custom Item</option>
+                            </select>
+                        </div>
+                        
+                        <div class="mb-3">
+                            <button class="btn btn-success w-100" id="startMappingBtn" disabled>
+                                <i class="fas fa-crosshairs me-2"></i>Start Mapping
+                            </button>
+                        </div>
+                        
+                        <div class="mb-3" id="mappingInstructions" style="display: none;">
+                            <div class="alert alert-warning">
+                                <small><i class="fas fa-info-circle me-1"></i>
+                                <span id="instructionText">Click on the item in the game screen to map it</span>
+                                </small>
+                            </div>
+                        </div>
+                        
+                        <div class="mb-3">
+                            <label for="itemNameInput" class="form-label">Item Name (Optional)</label>
+                            <input type="text" class="form-control" id="itemNameInput" placeholder="e.g., 'Main Chest', 'Diamond Egg'">
+                        </div>
+                        
+                        <div class="d-grid gap-2">
+                            <button class="btn btn-outline-secondary" id="saveItemBtn" disabled>
+                                <i class="fas fa-save me-2"></i>Save Mapped Item
+                            </button>
+                            <button class="btn btn-outline-danger" id="cancelMappingBtn" disabled>
+                                <i class="fas fa-times me-2"></i>Cancel Mapping
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- AI Learning Controls -->
+                <div class="card mb-3">
+                    <div class="card-header">
+                        <h5><i class="fas fa-brain me-2"></i>AI Learning</h5>
+                    </div>
+                    <div class="card-body">
+                        <div class="mb-3">
+                            <div class="btn-group w-100 mb-2">
+                                <button class="btn btn-success" id="autoPlayBtn">
+                                    <i class="fas fa-play me-1"></i>Auto Play
+                                </button>
+                                <button class="btn btn-danger" id="stopAutoPlayBtn">
+                                    <i class="fas fa-stop me-1"></i>Stop
+                                </button>
+                            </div>
+                        </div>
+                        
+                        <div class="mb-3">
+                            <div class="btn-group w-100 mb-2">
+                                <button class="btn btn-info" id="learnGameplayBtn">
+                                    <i class="fas fa-graduation-cap me-1"></i>Learn Gameplay
+                                </button>
+                                <button class="btn btn-outline-info" id="stopLearningBtn">
+                                    <i class="fas fa-pause me-1"></i>Stop Learning
+                                </button>
+                            </div>
+                        </div>
+                        
+                        <div class="mb-3">
+                            <div class="btn-group w-100 mb-2">
+                                <button class="btn btn-warning" id="recordMacroBtn">
+                                    <i class="fas fa-record-vinyl me-1"></i>Record Macro
+                                </button>
+                                <button class="btn btn-outline-warning" id="stopRecordingBtn">
+                                    <i class="fas fa-square me-1"></i>Stop Recording
+                                </button>
+                            </div>
+                        </div>
+                        
+                        <div class="mb-3">
+                            <button class="btn btn-primary w-100" id="watchAndCreateBtn">
+                                <i class="fas fa-eye me-2"></i>Watch & Create Macro
+                            </button>
+                            <small class="text-muted">AI watches your actions and creates reusable macros</small>
+                        </div>
+                        
+                        <div class="mt-3">
+                            <div class="row">
+                                <div class="col-6">
+                                    <small class="text-muted">Learning Status:</small>
+                                    <div class="badge bg-secondary" id="learningStatus">Idle</div>
+                                </div>
+                                <div class="col-6">
+                                    <small class="text-muted">Auto Play:</small>
+                                    <div class="badge bg-secondary" id="autoPlayStatus">Stopped</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Mapped Items List -->
+                <div class="card">
+                    <div class="card-header">
+                        <h5><i class="fas fa-list me-2"></i>Mapped Items</h5>
+                    </div>
+                    <div class="card-body">
+                        <div id="mappedItemsList" class="list-group list-group-flush">
+                            <div class="text-muted text-center py-3">No items mapped yet</div>
+                        </div>
+                        <div class="mt-3">
+                            <button class="btn btn-outline-primary btn-sm w-100" id="refreshItemsBtn">
+                                <i class="fas fa-sync me-1"></i>Refresh List
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Main Display -->
+            <div class="col-md-8">
+                <!-- Live Screen Capture -->
+                <div class="card mb-3">
+                    <div class="card-header">
+                        <h5><i class="fas fa-camera me-2"></i>Live Game Screen</h5>
+                    </div>
+                    <div class="card-body text-center position-relative">
+                        <div id="screenContainer" class="position-relative" style="max-height: 500px; overflow: hidden;">
+                            <img id="gameScreenCapture" src="" alt="Game screen will appear here" class="img-fluid border" style="cursor: crosshair;">
+                            <div id="noGameScreen" class="text-muted py-5">
+                                <i class="fas fa-gamepad fa-3x mb-3"></i>
+                                <p>Detect game window first to see live screen</p>
+                            </div>
+                            <!-- Mapping overlay -->
+                            <div id="mappingOverlay" class="position-absolute top-0 start-0 w-100 h-100" style="display: none; background: rgba(255,0,0,0.1); cursor: crosshair;"></div>
+                            <!-- Mapped items overlay -->
+                            <div id="itemsOverlay" class="position-absolute top-0 start-0 w-100 h-100" style="pointer-events: none;"></div>
+                        </div>
+                        <div class="mt-2">
+                            <button class="btn btn-outline-primary btn-sm" id="captureScreenBtn">
+                                <i class="fas fa-camera me-1"></i>Capture Now
+                            </button>
+                            <div class="form-check form-check-inline ms-3">
+                                <input class="form-check-input" type="checkbox" id="liveCapture" checked>
+                                <label class="form-check-label" for="liveCapture">Live Capture</label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- AI Memory & Analytics -->
+                <div class="card mb-3">
+                    <div class="card-header">
+                        <h5><i class="fas fa-database me-2"></i>AI Memory & Analytics</h5>
+                    </div>
+                    <div class="card-body">
+                        <div class="row">
+                            <div class="col-md-3">
+                                <div class="text-center">
+                                    <div class="h4 text-primary" id="itemCount">0</div>
+                                    <small class="text-muted">Items Mapped</small>
+                                </div>
+                            </div>
+                            <div class="col-md-3">
+                                <div class="text-center">
+                                    <div class="h4 text-success" id="macroCount">0</div>
+                                    <small class="text-muted">Macros Created</small>
+                                </div>
+                            </div>
+                            <div class="col-md-3">
+                                <div class="text-center">
+                                    <div class="h4 text-info" id="learningHours">0</div>
+                                    <small class="text-muted">Learning Hours</small>
+                                </div>
+                            </div>
+                            <div class="col-md-3">
+                                <div class="text-center">
+                                    <div class="h4 text-warning" id="accuracyRate">0%</div>
+                                    <small class="text-muted">Recognition Accuracy</small>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="mt-3">
+                            <h6>Recent AI Actions</h6>
+                            <div id="aiActionsList" class="bg-dark text-light p-3 rounded" style="height: 200px; overflow-y: auto; font-family: monospace; font-size: 0.9em;">
+                                <div class="text-muted">AI action logs will appear here...</div>
+                            </div>
+                        </div>
+                        
+                        <div class="mt-3">
+                            <button class="btn btn-outline-danger btn-sm" id="clearMemoryBtn">
+                                <i class="fas fa-trash me-1"></i>Clear AI Memory
+                            </button>
+                            <button class="btn btn-outline-info btn-sm ms-2" id="exportDataBtn">
+                                <i class="fas fa-download me-1"></i>Export Data
+                            </button>
+                            <button class="btn btn-outline-success btn-sm ms-2" id="importDataBtn">
+                                <i class="fas fa-upload me-1"></i>Import Data
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="{{ url_for('static', filename='item_mapper.js') }}"></script>
+</body>
+</html>

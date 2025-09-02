@@ -1,0 +1,99 @@
+import os
+import subprocess
+import math
+import torch
+import torch.optim as optim
+from datasets import load_dataset, DataLoader
+from models.vision_language_model import VisionLanguageModel
+from models.config import VLMConfig
+
+# Function to clone the repository
+def clone_repository(repo_url):
+    try:
+        subprocess.run(["git", "clone", repo_url], check=True)
+        print(f"Cloned repository: {repo_url}")
+    except subprocess.CalledProcessError as e:
+        print(f"Error cloning repository: {e}")
+
+def train(train_cfg, vlm_cfg):
+    train_loader, val_loader = get_dataloaders(train_cfg, vlm_cfg)
+    tokenizer = get_tokenizer(vlm_cfg.lm_tokenizer, vlm_cfg.vlm_extra_tokens, vlm_cfg.lm_chat_template)
+
+    run_name = get_run_name(train_cfg, vlm_cfg)
+    if train_cfg.log_wandb and is_master():
+        run = wandb.init(entity=train_cfg.wandb_entity, project="nanoVLM",
+                          config={"VLMConfig": asdict(vlm_cfg), "TrainConfig": asdict(train_cfg)}, name=run_name)
+
+    # Initialize model
+    if train_cfg.resume_from_vlm_checkpoint:
+        model = VisionLanguageModel.from_pretrained(vlm_cfg.vlm_checkpoint_path)
+    else:
+        model = VisionLanguageModel(vlm_cfg, load_backbone=vlm_cfg.vlm_load_backbone_weights)
+        
+    if is_master():
+        print(f"nanoVLM initialized with {sum(p.numel() for p in model.parameters()):,} parameters")
+
+    model.to(device)
+    if train_cfg.compile:
+        model = torch.compile(model)
+    if is_dist():
+        model = wrap_model(model)
+
+    # Implement detailed logging at each epoch
+    for epoch in range(train_cfg.epochs):
+        model.train()
+        total_loss = 0
+        for step, (images, input_ids, labels, attention_mask) in enumerate(train_loader):
+            images, input_ids, labels, attention_mask = (images.to(device), input_ids.to(device), labels.to(device), attention_mask.to(device))
+            
+            # forward pass and loss calculation
+            loss = model(input_ids, images, attention_mask, labels)
+            
+            # Backward pass and optimization
+            optimizer.zero_grad()
+            loss.backward()
+            optimizer.step()
+
+            total_loss += loss.item()
+
+        # Validation and model saving
+        if is_master() and (epoch + 1) % train_cfg.eval_interval == 0:
+            model.eval()
+            with torch.no_grad():
+                # Validation logic here...
+                pass
+
+    # Save model checkpoint logic here
+
+def main():
+    # Clone the nanoVLM repository
+    clone_repository("https://github.com/huggingface/nanoVLM.git")
+
+    # Initialize configuration
+    cfg = VLMConfig()
+
+    # Load your dataset
+    dataset = load_dataset('your_dataset_name_here')  # Update this with your dataset
+    train_loader = DataLoader(dataset['train'], batch_size=cfg.batch_size, shuffle=True)
+
+    # Initialize model
+    model = VisionLanguageModel(cfg)
+    optimizer = optim.Adam(model.parameters(), lr=cfg.learning_rate)
+
+    # Training loop
+    for epoch in range(cfg.epochs):
+        model.train()
+        for batch in train_loader:
+            images, captions = batch['images'], batch['captions']  # Update based on your dataset
+            optimizer.zero_grad()
+            outputs = model(images, captions)
+            loss = compute_loss(outputs, captions)  # Define compute_loss based on your need
+            loss.backward()
+            optimizer.step()
+            print(f'Epoch: {epoch}, Loss: {loss.item()}')
+
+    # Save the model
+    torch.save(model.state_dict(), 'your_model_checkpoint_path.pth')
+
+if __name__ == "__main__":
+    main()

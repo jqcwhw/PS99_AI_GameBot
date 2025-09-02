@@ -11,7 +11,6 @@ import queue
 import json
 from pathlib import Path
 import random
-from collections import deque
 
 try:
     import pyautogui

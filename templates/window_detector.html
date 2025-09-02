@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Window Detection - AI Game Bot</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link href="{{ url_for('static', filename='style.css') }}" rel="stylesheet">
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+        <div class="container">
+            <a class="navbar-brand" href="/">
+                <i class="fas fa-robot"></i> AI Game Bot
+            </a>
+            <div class="navbar-nav ms-auto">
+                <a class="nav-link" href="/">Dashboard</a>
+                <a class="nav-link" href="/multi-instance-launcher">Multi-Instance</a>
+                <a class="nav-link active" href="/window-detector">Window Detection</a>
+                <a class="nav-link" href="/task-recorder">Task Recorder</a>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container mt-4">
+        <div class="row">
+            <div class="col-md-8">
+                <div class="card">
+                    <div class="card-header d-flex justify-content-between align-items-center">
+                        <h5><i class="fas fa-search"></i> Roblox Window Detection</h5>
+                        <button class="btn btn-primary btn-sm" onclick="scanWindows()">
+                            <i class="fas fa-sync"></i> Scan Windows
+                        </button>
+                    </div>
+                    <div class="card-body">
+                        <div class="alert alert-info">
+                            <i class="fas fa-info-circle"></i>
+                            This system detects manually launched Roblox windows (RobloxPlayerBeta) without requiring launch from the app.
+                            Perfect for users who activate multi-launcher settings but manually launch Roblox from their desktop.
+                        </div>
+
+                        <h6>Detected Windows</h6>
+                        <div id="detectedWindows">
+                            <div class="text-muted">Click "Scan Windows" to detect Roblox instances</div>
+                        </div>
+
+                        <hr>
+
+                        <h6>Running Processes</h6>
+                        <div id="robloxProcesses">
+                            <div class="text-muted">Process information will appear here</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <div class="card">
+                    <div class="card-header">
+                        <h6><i class="fas fa-cog"></i> Detection Status</h6>
+                    </div>
+                    <div class="card-body">
+                        <div id="detectionStatus">
+                            <div class="text-muted">Loading status...</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card mt-3">
+                    <div class="card-header">
+                        <h6><i class="fas fa-eye"></i> Window Controls</h6>
+                    </div>
+                    <div class="card-body">
+                        <div id="windowControls">
+                            <div class="text-muted">Select a window to see controls</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card mt-3">
+                    <div class="card-header">
+                        <h6><i class="fas fa-camera"></i> Window Preview</h6>
+                    </div>
+                    <div class="card-body">
+                        <div id="windowPreview">
+                            <div class="text-center text-muted">
+                                <i class="fas fa-image fa-3x mb-3"></i><br>
+                                No window selected
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        let selectedWindow = null;
+        let scanInterval = null;
+
+        // Initialize page
+        document.addEventListener('DOMContentLoaded', function() {
+            loadDetectionStatus();
+            startAutoScan();
+        });
+
+        function startAutoScan() {
+            // Auto-scan every 10 seconds
+            scanInterval = setInterval(scanWindows, 10000);
+            scanWindows(); // Initial scan
+        }
+
+        function scanWindows() {
+            fetch('/api/windows/scan', {
+                method: 'POST',
+                headers: { 'Content-Type': 'application/json' }
+            })
+            .then(response => response.json())
+            .then(data => {
+                if (data.success) {
+                    displayWindows(data.windows);
+                } else {
+                    console.error('Scan failed:', data.error);
+                }
+            })
+            .catch(error => console.error('Scan error:', error));
+
+            // Also get processes
+            fetch('/api/windows/processes')
+            .then(response => response.json())
+            .then(data => {
+                if (data.success) {
+                    displayProcesses(data.processes);
+                }
+            })
+            .catch(error => console.error('Process fetch error:', error));
+        }
+
+        function displayWindows(windows) {
+            const container = document.getElementById('detectedWindows');
+            
+            if (windows.length === 0) {
+                container.innerHTML = '<div class="text-muted">No Roblox windows detected</div>';
+                return;
+            }
+
+            let html = '';
+            windows.forEach(window => {
+                const isSelected = selectedWindow === window.window_id;
+                html += `
+                    <div class="card mb-2 ${isSelected ? 'border-primary' : ''}">
+                        <div class="card-body py-2">
+                            <div class="d-flex justify-content-between align-items-center">
+                                <div>
+                                    <strong>${window.title}</strong><br>
+                                    <small class="text-muted">
+                                        PID: ${window.pid} | 
+                                        ${window.position[2]}x${window.position[3]} |
+                                        ${window.is_active ? '<span class="text-success">Active</span>' : '<span class="text-muted">Inactive</span>'}
+                                    </small>
+                                </div>
+                                <div>
+                                    <button class="btn btn-sm btn-outline-primary" onclick="selectWindow('${window.window_id}', '${window.title}')">
+                                        Select
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                `;
+            });
+            
+            container.innerHTML = html;
+        }
+
+        function displayProcesses(processes) {
+            const container = document.getElementById('robloxProcesses');
+            
+            if (processes.length === 0) {
+                container.innerHTML = '<div class="text-muted">No Roblox processes running</div>';
+                return;
+            }
+
+            let html = '<div class="table-responsive"><table class="table table-sm"><thead><tr><th>Name</th><th>PID</th><th>Memory</th></tr></thead><tbody>';
+            processes.forEach(proc => {
+                html += `
+                    <tr>
+                        <td>${proc.name}</td>
+                        <td>${proc.pid}</td>
+                        <td>${Math.round(proc.memory_mb)}MB</td>
+                    </tr>
+                `;
+            });
+            html += '</tbody></table></div>';
+            
+            container.innerHTML = html;
+        }
+
+        function selectWindow(windowId, title) {
+            selectedWindow = windowId;
+            updateWindowControls(windowId, title);
+            loadWindowPreview(windowId);
+            
+            // Refresh window display to show selection
+            scanWindows();
+        }
+
+        function updateWindowControls(windowId, title) {
+            const container = document.getElementById('windowControls');
+            container.innerHTML = `
+                <h6>${title}</h6>
+                <div class="d-grid gap-2">
+                    <button class="btn btn-primary btn-sm" onclick="focusWindow('${windowId}')">
+                        <i class="fas fa-eye"></i> Focus Window
+                    </button>
+                    <button class="btn btn-success btn-sm" onclick="startMonitoring('${windowId}')">
+                        <i class="fas fa-play"></i> Start Monitoring
+                    </button>
+                    <button class="btn btn-info btn-sm" onclick="captureScreenshot('${windowId}')">
+                        <i class="fas fa-camera"></i> Screenshot
+                    </button>
+                </div>
+            `;
+        }
+
+        function focusWindow(windowId) {
+            fetch(\`/api/windows/focus/\${windowId}\`, {
+                method: 'POST'
+            })
+            .then(response => response.json())
+            .then(data => {
+                if (data.success) {
+                    showAlert('Window focused successfully', 'success');
+                } else {
+                    showAlert('Failed to focus window', 'danger');
+                }
+            })
+            .catch(error => {
+                console.error('Focus error:', error);
+                showAlert('Error focusing window', 'danger');
+            });
+        }
+
+        function startMonitoring(windowId) {
+            const config = {
+                auto_focus: false,
+                keep_active: true,
+                capture_screenshots: true,
+                track_title_changes: true,
+                mutex_bypass_active: true
+            };
+
+            fetch(\`/api/windows/monitor/\${windowId}\`, {
+                method: 'POST',
+                headers: { 'Content-Type': 'application/json' },
+                body: JSON.stringify(config)
+            })
+            .then(response => response.json())
+            .then(data => {
+                if (data.success) {
+                    showAlert('Window monitoring started', 'success');
+                } else {
+                    showAlert('Failed to start monitoring', 'danger');
+                }
+            })
+            .catch(error => {
+                console.error('Monitor error:', error);
+                showAlert('Error starting monitoring', 'danger');
+            });
+        }
+
+        function captureScreenshot(windowId) {
+            fetch(\`/api/windows/screenshot/\${windowId}\`)
+            .then(response => response.json())
+            .then(data => {
+                if (data.success) {
+                    loadWindowPreview(windowId, data.image);
+                } else {
+                    showAlert('Failed to capture screenshot', 'danger');
+                }
+            })
+            .catch(error => {
+                console.error('Screenshot error:', error);
+                showAlert('Error capturing screenshot', 'danger');
+            });
+        }
+
+        function loadWindowPreview(windowId, imageData = null) {
+            const container = document.getElementById('windowPreview');
+            
+            if (imageData) {
+                container.innerHTML = \`<img src="\${imageData}" class="img-fluid" style="max-height: 200px;">\`;
+            } else {
+                container.innerHTML = \`
+                    <div class="text-center">
+                        <button class="btn btn-outline-primary" onclick="captureScreenshot('\${windowId}')">
+                            <i class="fas fa-camera"></i> Capture Screenshot
+                        </button>
+                    </div>
+                \`;
+            }
+        }
+
+        function loadDetectionStatus() {
+            fetch('/api/windows/status')
+            .then(response => response.json())
+            .then(data => {
+                if (data.success) {
+                    const container = document.getElementById('detectionStatus');
+                    container.innerHTML = \`
+                        <div class="small">
+                            <div>Windows: <span class="badge bg-primary">\${data.detected_windows}</span></div>
+                            <div>Processes: <span class="badge bg-info">\${data.monitored_processes}</span></div>
+                            <div>Detection: <span class="badge \${data.detection_available ? 'bg-success' : 'bg-warning'}">\${data.detection_available ? 'Available' : 'Limited'}</span></div>
+                        </div>
+                    \`;
+                }
+            })
+            .catch(error => console.error('Status error:', error));
+        }
+
+        function showAlert(message, type) {
+            const alertDiv = document.createElement('div');
+            alertDiv.className = \`alert alert-\${type} alert-dismissible fade show\`;
+            alertDiv.innerHTML = \`
+                \${message}
+                <button type="button" class="btn-close" data-bs-dismiss="alert"></button>
+            \`;
+            
+            document.querySelector('.container').insertBefore(alertDiv, document.querySelector('.row'));
+            
+            // Auto-dismiss after 3 seconds
+            setTimeout(() => {
+                if (alertDiv.parentNode) {
+                    alertDiv.remove();
+                }
+            }, 3000);
+        }
+
+        // Cleanup on page unload
+        window.addEventListener('beforeunload', function() {
+            if (scanInterval) {
+                clearInterval(scanInterval);
+            }
+        });
+    </script>
+</body>
+</html>

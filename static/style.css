@@ -1,0 +1,179 @@
+/* AI Game Bot Dashboard Styles */
+
+body {
+    background-color: #f8f9fa;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.card {
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    border: none;
+    border-radius: 8px;
+}
+
+.card-header {
+    background-color: #fff;
+    border-bottom: 1px solid #dee2e6;
+    font-weight: 600;
+}
+
+.card-header h5 {
+    margin: 0;
+    color: #495057;
+}
+
+#screenCapture {
+    max-width: 100%;
+    max-height: 400px;
+    border-radius: 4px;
+}
+
+#noCapture {
+    min-height: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#commandResults {
+    font-family: 'Courier New', monospace;
+    font-size: 0.9em;
+    line-height: 1.4;
+}
+
+.quick-cmd {
+    margin-bottom: 5px;
+}
+
+.badge {
+    font-size: 0.85em;
+}
+
+.status-indicator {
+    display: inline-block;
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    margin-right: 5px;
+}
+
+.status-active {
+    background-color: #28a745;
+    animation: pulse 2s infinite;
+}
+
+.status-inactive {
+    background-color: #dc3545;
+}
+
+@keyframes pulse {
+    0% { opacity: 1; }
+    50% { opacity: 0.5; }
+    100% { opacity: 1; }
+}
+
+.navbar-brand {
+    font-size: 1.5rem;
+}
+
+.input-group-text {
+    background-color: #fff;
+    border-right: none;
+}
+
+.form-control:focus {
+    border-color: #80bdff;
+    box-shadow: 0 0 0 0.2rem rgba(0,123,255,.25);
+}
+
+.btn-group-vertical .btn {
+    text-align: left;
+}
+
+.loading-spinner {
+    display: inline-block;
+    width: 1rem;
+    height: 1rem;
+    border: 2px solid #f3f3f3;
+    border-top: 2px solid #007bff;
+    border-radius: 50%;
+    animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+.command-timestamp {
+    font-size: 0.8em;
+    color: #6c757d;
+}
+
+.system-metric {
+    padding: 8px;
+    background-color: #f8f9fa;
+    border-radius: 4px;
+    margin-bottom: 8px;
+}
+
+.knowledge-summary {
+    max-height: 200px;
+    overflow-y: auto;
+    font-size: 0.9em;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .col-md-4, .col-md-8 {
+        margin-bottom: 20px;
+    }
+    
+    .btn-group-vertical .btn {
+        font-size: 0.9em;
+        padding: 8px 12px;
+    }
+    
+    #screenCapture {
+        max-height: 250px;
+    }
+    
+    #commandResults {
+        height: 200px;
+        font-size: 0.8em;
+    }
+}
+
+/* Dark theme for command results */
+#commandResults {
+    background-color: #2d3748 !important;
+    color: #e2e8f0 !important;
+}
+
+#commandResults .text-muted {
+    color: #a0aec0 !important;
+}
+
+/* Success/Error indicators */
+.result-success {
+    color: #48bb78;
+}
+
+.result-error {
+    color: #f56565;
+}
+
+.result-info {
+    color: #63b3ed;
+}
+
+/* Animation for status updates */
+.status-update {
+    animation: statusBlink 0.5s ease-in-out;
+}
+
+@keyframes statusBlink {
+    0%, 100% { opacity: 1; }
+    50% { opacity: 0.7; }
+}

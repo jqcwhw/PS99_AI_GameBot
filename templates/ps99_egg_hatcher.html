@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PS99 Egg Hatcher - AI Game Bot</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <style>
+        .egg-card {
+            transition: transform 0.2s;
+            cursor: pointer;
+        }
+        .egg-card:hover {
+            transform: translateY(-5px);
+        }
+        .pet-detection-box {
+            border: 2px dashed #007bff;
+            min-height: 200px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: rgba(0, 123, 255, 0.05);
+        }
+        .target-pet-badge {
+            position: relative;
+            animation: pulse 2s infinite;
+        }
+        @keyframes pulse {
+            0% { opacity: 1; }
+            50% { opacity: 0.6; }
+            100% { opacity: 1; }
+        }
+        .hatch-stats {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="/">
+                <i class="fas fa-robot me-2"></i>PS99 Egg Hatcher
+            </a>
+            <div class="navbar-nav ms-auto">
+                <a class="nav-link" href="/"><i class="fas fa-home me-1"></i>Dashboard</a>
+                <a class="nav-link" href="/multi-instance"><i class="fas fa-window-restore me-1"></i>Multi-Instance</a>
+                <a class="nav-link" href="/item-mapper"><i class="fas fa-map me-1"></i>Item Mapper</a>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container-fluid mt-4">
+        <!-- Header Section -->
+        <div class="row mb-4">
+            <div class="col-12">
+                <div class="card bg-gradient-primary text-white">
+                    <div class="card-body">
+                        <div class="row align-items-center">
+                            <div class="col-md-8">
+                                <h2><i class="fas fa-egg me-2"></i>Pet Simulator 99 Egg Hatcher</h2>
+                                <p class="mb-0">Real in-game egg hatching with computer vision pet detection and target alerts</p>
+                            </div>
+                            <div class="col-md-4 text-end">
+                                <div class="d-flex justify-content-end gap-2">
+                                    <button id="findGameBtn" class="btn btn-light">
+                                        <i class="fas fa-search me-1"></i>Find Game
+                                    </button>
+                                    <button id="refreshDataBtn" class="btn btn-outline-light">
+                                        <i class="fas fa-sync me-1"></i>Refresh Data
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <!-- Left Panel: Controls -->
+            <div class="col-lg-4">
+                <!-- Game Status -->
+                <div class="card mb-3">
+                    <div class="card-header bg-info text-white">
+                        <i class="fas fa-gamepad me-2"></i>Game Status
+                    </div>
+                    <div class="card-body">
+                        <div class="row text-center">
+                            <div class="col-6">
+                                <h5 id="gameStatus" class="mb-1 text-warning">Not Connected</h5>
+                                <small class="text-muted">Game Window</small>
+                            </div>
+                            <div class="col-6">
+                                <h5 id="hatchStatus" class="mb-1 text-secondary">Idle</h5>
+                                <small class="text-muted">Hatch Status</small>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Hatching Controls -->
+                <div class="card mb-3">
+                    <div class="card-header bg-success text-white">
+                        <i class="fas fa-play me-2"></i>Hatching Controls
+                    </div>
+                    <div class="card-body">
+                        <!-- Egg Selection -->
+                        <div class="mb-3">
+                            <label class="form-label">Target Egg Type:</label>
+                            <select id="eggSelect" class="form-select">
+                                <option value="">Any Available Egg</option>
+                            </select>
+                        </div>
+
+                        <!-- Action Buttons -->
+                        <div class="d-grid gap-2">
+                            <button id="hatchOnceBtn" class="btn btn-primary">
+                                <i class="fas fa-egg me-2"></i>Hatch Once
+                            </button>
+                            <button id="startAutoHatchBtn" class="btn btn-success">
+                                <i class="fas fa-play me-2"></i>Start Auto Hatch
+                            </button>
+                            <button id="stopAutoHatchBtn" class="btn btn-danger" disabled>
+                                <i class="fas fa-stop me-2"></i>Stop Auto Hatch
+                            </button>
+                        </div>
+
+                        <div class="mt-3">
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" id="alertOnTarget">
+                                <label class="form-check-label" for="alertOnTarget">
+                                    Alert on Target Pet
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Target Pets -->
+                <div class="card mb-3">
+                    <div class="card-header bg-warning text-dark">
+                        <i class="fas fa-crosshairs me-2"></i>Target Pets
+                    </div>
+                    <div class="card-body">
+                        <div class="mb-3">
+                            <label class="form-label">Add Target Pet:</label>
+                            <div class="input-group">
+                                <input type="text" id="targetPetInput" class="form-control" placeholder="Pet name...">
+                                <button id="addTargetBtn" class="btn btn-outline-primary">
+                                    <i class="fas fa-plus"></i>
+                                </button>
+                            </div>
+                        </div>
+                        
+                        <div id="targetPetsList" class="d-flex flex-wrap gap-2">
+                            <!-- Target pets will be added here -->
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Hatching Statistics -->
+                <div class="card hatch-stats">
+                    <div class="card-header">
+                        <i class="fas fa-chart-bar me-2"></i>Hatching Statistics
+                    </div>
+                    <div class="card-body">
+                        <div class="row text-center">
+                            <div class="col-4">
+                                <h4 id="totalHatches" class="mb-1">0</h4>
+                                <small>Total Hatches</small>
+                            </div>
+                            <div class="col-4">
+                                <h4 id="petsDetected" class="mb-1">0</h4>
+                                <small>Pets Detected</small>
+                            </div>
+                            <div class="col-4">
+                                <h4 id="targetPetsFound" class="mb-1">0</h4>
+                                <small>Targets Found</small>
+                            </div>
+                        </div>
+                        <hr class="my-3">
+                        <div class="text-center">
+                            <h5 id="successRate" class="mb-1">0%</h5>
+                            <small>Success Rate</small>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Right Panel: Detection & Results -->
+            <div class="col-lg-8">
+                <!-- Live Screen Capture -->
+                <div class="card mb-3">
+                    <div class="card-header bg-primary text-white">
+                        <i class="fas fa-camera me-2"></i>Live Game Screen
+                    </div>
+                    <div class="card-body">
+                        <div class="text-center">
+                            <img id="gameScreenshot" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVR42mNkYPhfDwAChwGA60e6kgAAAABJRU5ErkJggg==" 
+                                 class="img-fluid" style="max-height: 300px; border: 2px solid #ddd;">
+                        </div>
+                        <div class="mt-2 text-center">
+                            <small class="text-muted">Last updated: <span id="screenshotTime">Never</span></small>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Pet Detection -->
+                <div class="card mb-3">
+                    <div class="card-header bg-info text-white">
+                        <i class="fas fa-search me-2"></i>Pet Detection
+                    </div>
+                    <div class="card-body">
+                        <div id="petDetectionArea" class="pet-detection-box">
+                            <div class="text-center text-muted">
+                                <i class="fas fa-search fa-3x mb-2"></i>
+                                <p>Waiting for pet detection...</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Hatching Results Log -->
+                <div class="card">
+                    <div class="card-header bg-dark text-white d-flex justify-content-between align-items-center">
+                        <span><i class="fas fa-list me-2"></i>Hatching Results Log</span>
+                        <button id="clearLogBtn" class="btn btn-sm btn-outline-light">
+                            <i class="fas fa-trash me-1"></i>Clear Log
+                        </button>
+                    </div>
+                    <div class="card-body" style="max-height: 300px; overflow-y: auto;">
+                        <div id="hatchingLog">
+                            <div class="text-muted text-center">
+                                <i class="fas fa-clock me-2"></i>No hatching results yet
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Alert Modal -->
+    <div class="modal fade" id="targetPetModal" tabindex="-1">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header bg-success text-white">
+                    <h5 class="modal-title">
+                        <i class="fas fa-star me-2"></i>TARGET PET HATCHED!
+                    </h5>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body text-center">
+                    <i class="fas fa-trophy fa-4x text-warning mb-3"></i>
+                    <h4 id="targetPetName">Pet Name</h4>
+                    <p class="text-muted">Congratulations! You hatched a target pet!</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Awesome!</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="{{ url_for('static', filename='ps99_egg_hatcher.js') }}"></script>
+</body>
+</html>
