@@ -1,0 +1,8 @@
+{
+  "occurrences": 3,
+  "common_context": {
+    "command": "hatch eggs"
+  },
+  "context_ranges": {},
+  "success_rate": 0.0
+}

@@ -1,0 +1,455 @@
+2025-08-16 08:24:39,972 - GameBot - INFO - logger.py:74 - Logger 'GameBot' initialized
+2025-08-16 08:24:39,973 - GameBot - INFO - main.py:47 - GameBot initialized successfully
+2025-08-16 08:32:00,723 - GameBot - INFO - logger.py:74 - Logger 'GameBot' initialized
+2025-08-16 08:32:00,723 - GameBot - INFO - main.py:47 - GameBot initialized successfully
+2025-08-16 08:32:00,723 - GameBot - INFO - main.py:51 - Starting interactive mode...
+2025-08-16 08:34:00,049 - GameBot - INFO - logger.py:74 - Logger 'GameBot' initialized
+2025-08-16 08:34:00,050 - GameBot - INFO - main.py:47 - GameBot initialized successfully
+2025-08-16 08:41:52,298 - GameBot - INFO - logger.py:74 - Logger 'GameBot' initialized
+2025-08-16 08:41:52,954 - GameBot - INFO - main.py:52 - 🤖 GameBot initialized with autonomous self-learning capabilities
+2025-08-16 09:01:47,205 - GameBot - INFO - logger.py:74 - Logger 'GameBot' initialized
+2025-08-16 09:01:47,850 - GameBot - INFO - main.py:52 - 🤖 GameBot initialized with autonomous self-learning capabilities
+2025-08-16 09:15:12,701 - GameBot - INFO - logger.py:74 - Logger 'GameBot' initialized
+2025-08-16 09:15:13,369 - GameBot - INFO - main.py:52 - 🤖 GameBot initialized with autonomous self-learning capabilities
+2025-08-16 09:28:25,804 - GameBot - INFO - logger.py:74 - Logger 'GameBot' initialized
+2025-08-16 09:28:26,422 - GameBot - INFO - main.py:59 - 🤖 GameBot initialized with autonomous self-learning capabilities
+2025-08-16 15:29:13,150 - GameBot - INFO - logger.py:74 - Logger 'GameBot' initialized
+2025-08-16 15:29:13,809 - GameBot - INFO - main.py:59 - 🤖 GameBot initialized with autonomous self-learning capabilities
+2025-08-16 15:29:13,809 - GameBot - INFO - main.py:63 - Starting interactive mode...
+2025-08-16 15:29:44,133 - GameBot - INFO - logger.py:74 - Logger 'GameBot' initialized
+2025-08-16 15:29:44,405 - GameBot - INFO - main.py:59 - 🤖 GameBot initialized with autonomous self-learning capabilities
+2025-08-16 15:31:13,760 - GameBot - INFO - logger.py:74 - Logger 'GameBot' initialized
+2025-08-16 15:31:16,328 - GameBot - INFO - main.py:59 - 🤖 GameBot initialized with autonomous self-learning capabilities
+2025-08-16 15:32:10,297 - GameBot - INFO - logger.py:74 - Logger 'GameBot' initialized
+2025-08-16 15:32:10,577 - GameBot - INFO - main.py:59 - 🤖 GameBot initialized with autonomous self-learning capabilities
+2025-08-16 15:32:10,578 - GameBot - INFO - main.py:63 - Starting interactive mode...
+2025-08-17 06:49:51,578 - GameBot - INFO - logger.py:74 - Logger 'GameBot' initialized
+2025-08-17 06:49:52,218 - GameBot - INFO - main.py:59 - 🤖 GameBot initialized with autonomous self-learning capabilities
+2025-08-17 06:49:52,218 - GameBot - INFO - main.py:63 - Starting interactive mode...
+2025-08-17 06:51:54,449 - GameBot - INFO - logger.py:74 - Logger 'GameBot' initialized
+2025-08-17 06:51:55,124 - GameBot - INFO - main.py:59 - 🤖 GameBot initialized with autonomous self-learning capabilities
+2025-08-17 06:54:01,360 - GameBot - INFO - logger.py:74 - Logger 'GameBot' initialized
+2025-08-17 06:54:03,924 - GameBot - INFO - main.py:59 - 🤖 GameBot initialized with autonomous self-learning capabilities
+2025-08-17 07:15:50,855 - GameBot - INFO - logger.py:74 - Logger 'GameBot' initialized
+2025-08-17 07:15:51,498 - GameBot - INFO - main.py:59 - 🤖 GameBot initialized with autonomous self-learning capabilities
+2025-08-17 08:42:03,761 - GameBot - INFO - logger.py:74 - Logger 'GameBot' initialized
+2025-08-17 08:42:04,370 - GameBot - INFO - main.py:59 - 🤖 GameBot initialized with autonomous self-learning capabilities
+2025-08-17 08:44:54,335 - GameBot - INFO - logger.py:74 - Logger 'GameBot' initialized
+2025-08-17 08:44:56,971 - GameBot - INFO - main.py:59 - 🤖 GameBot initialized with autonomous self-learning capabilities
+2025-08-17 08:45:00,355 - GameBot - INFO - logger.py:74 - Logger 'GameBot' initialized
+2025-08-17 08:45:00,632 - GameBot - INFO - main.py:59 - 🤖 GameBot initialized with autonomous self-learning capabilities
+2025-08-17 08:55:04,832 - GameBot - INFO - logger.py:74 - Logger 'GameBot' initialized
+2025-08-17 08:55:05,489 - GameBot - INFO - main.py:59 - 🤖 GameBot initialized with autonomous self-learning capabilities
+2025-08-17 08:57:43,898 - GameBot - INFO - logger.py:74 - Logger 'GameBot' initialized
+2025-08-17 08:57:46,501 - GameBot - INFO - main.py:59 - 🤖 GameBot initialized with autonomous self-learning capabilities
+2025-08-17 09:03:43,352 - GameBot - INFO - logger.py:74 - Logger 'GameBot' initialized
+2025-08-17 09:03:44,038 - GameBot - INFO - main.py:59 - 🤖 GameBot initialized with autonomous self-learning capabilities
+2025-08-17 09:08:12,441 - GameBot - INFO - logger.py:74 - Logger 'GameBot' initialized
+2025-08-17 09:08:13,056 - GameBot - INFO - main.py:59 - 🤖 GameBot initialized with autonomous self-learning capabilities
+2025-08-17 09:14:47,032 - GameBot - INFO - logger.py:74 - Logger 'GameBot' initialized
+2025-08-17 09:14:47,704 - GameBot - INFO - main.py:59 - 🤖 GameBot initialized with autonomous self-learning capabilities
+2025-08-17 09:18:47,459 - GameBot - INFO - logger.py:74 - Logger 'GameBot' initialized
+2025-08-17 09:18:48,107 - GameBot - INFO - main.py:59 - 🤖 GameBot initialized with autonomous self-learning capabilities
+2025-08-17 09:24:52,281 - GameBot - INFO - logger.py:74 - Logger 'GameBot' initialized
+2025-08-17 09:24:52,926 - GameBot - INFO - main.py:59 - 🤖 GameBot initialized with autonomous self-learning capabilities
+2025-08-17 09:28:59,576 - GameBot - INFO - logger.py:74 - Logger 'GameBot' initialized
+2025-08-17 09:29:34,630 - GameBot - INFO - logger.py:74 - Logger 'GameBot' initialized
+2025-08-17 09:29:48,608 - GameBot - INFO - logger.py:74 - Logger 'GameBot' initialized
+2025-08-17 09:30:03,098 - GameBot - INFO - logger.py:74 - Logger 'GameBot' initialized
+2025-08-17 09:30:03,420 - GameBot - INFO - main.py:65 - 🤖 GameBot initialized with autonomous self-learning capabilities
+2025-08-17 09:31:56,907 - GameBot - INFO - logger.py:74 - Logger 'GameBot' initialized
+2025-08-17 09:31:59,485 - GameBot - INFO - main.py:65 - 🤖 GameBot initialized with autonomous self-learning capabilities
+2025-08-17 09:32:15,177 - GameBot - INFO - logger.py:74 - Logger 'GameBot' initialized
+2025-08-17 09:32:17,479 - GameBot - INFO - main.py:65 - 🤖 GameBot initialized with autonomous self-learning capabilities
+2025-08-17 10:33:28,659 - GameBot - INFO - logger.py:74 - Logger 'GameBot' initialized
+2025-08-17 10:33:29,340 - GameBot - INFO - main.py:65 - 🤖 GameBot initialized with autonomous self-learning capabilities
+2025-08-17 10:33:29,340 - GameBot - INFO - main.py:69 - Starting interactive mode...
+2025-08-17 10:40:46,839 - GameBot - INFO - logger.py:74 - Logger 'GameBot' initialized
+2025-08-17 10:40:47,540 - GameBot - INFO - main.py:65 - 🤖 GameBot initialized with autonomous self-learning capabilities
+2025-08-17 10:41:23,573 - GameBot - INFO - logger.py:74 - Logger 'GameBot' initialized
+2025-08-17 10:41:23,879 - GameBot - INFO - main.py:65 - 🤖 GameBot initialized with autonomous self-learning capabilities
+2025-08-17 11:00:12,592 - GameBot - INFO - logger.py:74 - Logger 'GameBot' initialized
+2025-08-17 11:00:13,317 - GameBot - INFO - main.py:65 - 🤖 GameBot initialized with autonomous self-learning capabilities
+2025-08-17 11:13:26,693 - GameBot - INFO - logger.py:74 - Logger 'GameBot' initialized
+2025-08-17 11:13:27,405 - GameBot - INFO - main.py:65 - 🤖 GameBot initialized with autonomous self-learning capabilities
+2025-08-17 11:17:11,159 - GameBot - INFO - logger.py:74 - Logger 'GameBot' initialized
+2025-08-17 11:17:11,810 - GameBot - INFO - main.py:65 - 🤖 GameBot initialized with autonomous self-learning capabilities
+2025-08-17 11:26:22,381 - GameBot - INFO - logger.py:74 - Logger 'GameBot' initialized
+2025-08-17 11:26:23,054 - GameBot - INFO - main.py:65 - 🤖 GameBot initialized with autonomous self-learning capabilities
+2025-08-17 11:26:52,259 - GameBot - INFO - logger.py:74 - Logger 'GameBot' initialized
+2025-08-17 11:26:52,567 - GameBot - INFO - main.py:65 - 🤖 GameBot initialized with autonomous self-learning capabilities
+2025-08-17 11:33:43,656 - GameBot - INFO - logger.py:74 - Logger 'GameBot' initialized
+2025-08-17 11:33:44,291 - GameBot - INFO - main.py:65 - 🤖 GameBot initialized with autonomous self-learning capabilities
+2025-08-17 11:37:05,322 - GameBot - INFO - logger.py:74 - Logger 'GameBot' initialized
+2025-08-17 11:37:05,965 - GameBot - INFO - main.py:65 - 🤖 GameBot initialized with autonomous self-learning capabilities
+2025-08-17 11:38:44,058 - GameBot - INFO - logger.py:74 - Logger 'GameBot' initialized
+2025-08-17 11:38:44,678 - GameBot - INFO - main.py:65 - 🤖 GameBot initialized with autonomous self-learning capabilities
+2025-08-17 11:38:44,796 - GameBot - INFO - main.py:474 - 🚀 Starting AI Game Bot web server on 0.0.0.0:5000
+2025-08-17 11:38:45,474 - GameBot - INFO - logger.py:74 - Logger 'GameBot' initialized
+2025-08-17 11:38:45,774 - GameBot - INFO - main.py:65 - 🤖 GameBot initialized with autonomous self-learning capabilities
+2025-08-17 11:38:45,872 - GameBot - INFO - main.py:474 - 🚀 Starting AI Game Bot web server on 0.0.0.0:5000
+2025-08-17 11:39:02,272 - GameBot - INFO - logger.py:74 - Logger 'GameBot' initialized
+2025-08-17 11:39:02,552 - GameBot - INFO - main.py:65 - 🤖 GameBot initialized with autonomous self-learning capabilities
+2025-08-17 11:39:02,641 - GameBot - INFO - main.py:474 - 🚀 Starting AI Game Bot web server on 0.0.0.0:5000
+2025-08-17 11:42:09,358 - GameBot - INFO - logger.py:74 - Logger 'GameBot' initialized
+2025-08-17 11:42:10,038 - GameBot - INFO - main.py:65 - 🤖 GameBot initialized with autonomous self-learning capabilities
+2025-08-17 11:42:10,256 - GameBot - INFO - main.py:474 - 🚀 Starting AI Game Bot web server on 0.0.0.0:5000
+2025-08-17 11:42:11,849 - GameBot - INFO - logger.py:74 - Logger 'GameBot' initialized
+2025-08-17 11:42:12,168 - GameBot - INFO - main.py:65 - 🤖 GameBot initialized with autonomous self-learning capabilities
+2025-08-17 11:42:12,332 - GameBot - INFO - main.py:474 - 🚀 Starting AI Game Bot web server on 0.0.0.0:5000
+2025-08-17 11:46:03,724 - GameBot - INFO - logger.py:74 - Logger 'GameBot' initialized
+2025-08-17 11:46:06,357 - GameBot - INFO - main.py:65 - 🤖 GameBot initialized with autonomous self-learning capabilities
+2025-08-17 11:46:06,475 - GameBot - INFO - main.py:474 - 🚀 Starting AI Game Bot web server on 0.0.0.0:5000
+2025-08-17 11:46:19,339 - GameBot - INFO - logger.py:74 - Logger 'GameBot' initialized
+2025-08-17 11:46:19,643 - GameBot - INFO - main.py:65 - 🤖 GameBot initialized with autonomous self-learning capabilities
+2025-08-17 11:46:19,757 - GameBot - INFO - main.py:474 - 🚀 Starting AI Game Bot web server on 0.0.0.0:5000
+2025-08-17 11:46:29,117 - GameBot - INFO - logger.py:74 - Logger 'GameBot' initialized
+2025-08-17 11:46:29,471 - GameBot - INFO - main.py:65 - 🤖 GameBot initialized with autonomous self-learning capabilities
+2025-08-17 11:46:29,595 - GameBot - INFO - main.py:474 - 🚀 Starting AI Game Bot web server on 0.0.0.0:5000
+2025-08-17 11:50:30,260 - GameBot - INFO - logger.py:74 - Logger 'GameBot' initialized
+2025-08-17 11:50:30,923 - GameBot - INFO - main.py:65 - 🤖 GameBot initialized with autonomous self-learning capabilities
+2025-08-17 11:50:31,130 - GameBot - INFO - main.py:474 - 🚀 Starting AI Game Bot web server on 0.0.0.0:5000
+2025-08-17 11:58:31,527 - GameBot - INFO - logger.py:74 - Logger 'GameBot' initialized
+2025-08-17 11:58:32,211 - GameBot - INFO - main.py:65 - 🤖 GameBot initialized with autonomous self-learning capabilities
+2025-08-17 11:58:32,211 - GameBot - INFO - main.py:69 - Starting interactive mode...
+2025-08-17 12:05:04,334 - GameBot - INFO - logger.py:74 - Logger 'GameBot' initialized
+2025-08-17 12:05:05,001 - GameBot - INFO - main.py:65 - 🤖 GameBot initialized with autonomous self-learning capabilities
+2025-08-17 12:05:05,213 - GameBot - INFO - main.py:474 - 🚀 Starting AI Game Bot web server on 0.0.0.0:5000
+2025-08-17 12:05:05,806 - GameBot - INFO - logger.py:74 - Logger 'GameBot' initialized
+2025-08-17 12:05:06,098 - GameBot - INFO - main.py:65 - 🤖 GameBot initialized with autonomous self-learning capabilities
+2025-08-17 12:05:06,192 - GameBot - INFO - main.py:474 - 🚀 Starting AI Game Bot web server on 0.0.0.0:5000
+2025-08-17 15:10:51,158 - GameBot - INFO - logger.py:74 - Logger 'GameBot' initialized
+2025-08-17 15:10:51,829 - GameBot - INFO - main.py:65 - 🤖 GameBot initialized with autonomous self-learning capabilities
+2025-08-17 15:10:51,829 - GameBot - INFO - main.py:69 - Starting interactive mode...
+2025-08-17 15:14:03,705 - GameBot - INFO - logger.py:74 - Logger 'GameBot' initialized
+2025-08-17 15:14:06,391 - GameBot - INFO - main.py:65 - 🤖 GameBot initialized with autonomous self-learning capabilities
+2025-08-17 15:14:06,671 - GameBot - INFO - main.py:474 - 🚀 Starting AI Game Bot web server on 0.0.0.0:5000
+2025-08-17 15:14:08,734 - GameBot - INFO - logger.py:74 - Logger 'GameBot' initialized
+2025-08-17 15:14:09,096 - GameBot - INFO - main.py:65 - 🤖 GameBot initialized with autonomous self-learning capabilities
+2025-08-17 15:14:09,256 - GameBot - INFO - main.py:474 - 🚀 Starting AI Game Bot web server on 0.0.0.0:5000
+2025-08-17 15:14:34,638 - GameBot - INFO - logger.py:74 - Logger 'GameBot' initialized
+2025-08-17 15:14:34,941 - GameBot - INFO - main.py:65 - 🤖 GameBot initialized with autonomous self-learning capabilities
+2025-08-17 15:14:35,132 - GameBot - INFO - main.py:474 - 🚀 Starting AI Game Bot web server on 0.0.0.0:5000
+2025-08-17 15:14:35,679 - GameBot - INFO - logger.py:74 - Logger 'GameBot' initialized
+2025-08-17 15:14:35,993 - GameBot - INFO - main.py:65 - 🤖 GameBot initialized with autonomous self-learning capabilities
+2025-08-17 15:14:36,101 - GameBot - INFO - main.py:474 - 🚀 Starting AI Game Bot web server on 0.0.0.0:5000
+2025-08-17 15:16:10,563 - GameBot - INFO - logger.py:74 - Logger 'GameBot' initialized
+2025-08-17 15:16:11,212 - GameBot - INFO - main.py:65 - 🤖 GameBot initialized with autonomous self-learning capabilities
+2025-08-17 15:16:11,451 - GameBot - INFO - main.py:474 - 🚀 Starting AI Game Bot web server on 0.0.0.0:5000
+2025-08-17 15:16:12,058 - GameBot - INFO - logger.py:74 - Logger 'GameBot' initialized
+2025-08-17 15:16:12,330 - GameBot - INFO - main.py:65 - 🤖 GameBot initialized with autonomous self-learning capabilities
+2025-08-17 15:16:12,423 - GameBot - INFO - main.py:474 - 🚀 Starting AI Game Bot web server on 0.0.0.0:5000
+2025-08-17 15:17:13,476 - GameBot - INFO - logger.py:74 - Logger 'GameBot' initialized
+2025-08-17 15:17:13,761 - GameBot - INFO - main.py:65 - 🤖 GameBot initialized with autonomous self-learning capabilities
+2025-08-17 15:17:13,904 - GameBot - INFO - main.py:474 - 🚀 Starting AI Game Bot web server on 0.0.0.0:5000
+2025-08-17 15:19:10,531 - GameBot - INFO - logger.py:74 - Logger 'GameBot' initialized
+2025-08-17 15:19:11,148 - GameBot - INFO - main.py:65 - 🤖 GameBot initialized with autonomous self-learning capabilities
+2025-08-17 15:19:11,258 - GameBot - INFO - main.py:474 - 🚀 Starting AI Game Bot web server on 0.0.0.0:5000
+2025-08-17 15:19:12,849 - GameBot - INFO - logger.py:74 - Logger 'GameBot' initialized
+2025-08-17 15:19:15,157 - GameBot - INFO - main.py:65 - 🤖 GameBot initialized with autonomous self-learning capabilities
+2025-08-17 15:19:15,265 - GameBot - INFO - main.py:474 - 🚀 Starting AI Game Bot web server on 0.0.0.0:5000
+2025-08-17 15:19:15,950 - GameBot - INFO - logger.py:74 - Logger 'GameBot' initialized
+2025-08-17 15:19:16,280 - GameBot - INFO - main.py:65 - 🤖 GameBot initialized with autonomous self-learning capabilities
+2025-08-17 15:19:16,411 - GameBot - INFO - main.py:474 - 🚀 Starting AI Game Bot web server on 0.0.0.0:5000
+2025-08-17 15:19:34,816 - GameBot - INFO - logger.py:74 - Logger 'GameBot' initialized
+2025-08-17 15:19:35,110 - GameBot - INFO - main.py:65 - 🤖 GameBot initialized with autonomous self-learning capabilities
+2025-08-17 15:19:35,216 - GameBot - INFO - main.py:474 - 🚀 Starting AI Game Bot web server on 0.0.0.0:5000
+2025-08-17 15:20:10,109 - GameBot - INFO - logger.py:74 - Logger 'GameBot' initialized
+2025-08-17 15:20:10,373 - GameBot - INFO - main.py:65 - 🤖 GameBot initialized with autonomous self-learning capabilities
+2025-08-17 15:20:10,484 - GameBot - INFO - main.py:474 - 🚀 Starting AI Game Bot web server on 0.0.0.0:5000
+2025-08-17 15:20:46,792 - GameBot - INFO - logger.py:74 - Logger 'GameBot' initialized
+2025-08-17 15:20:47,092 - GameBot - INFO - main.py:65 - 🤖 GameBot initialized with autonomous self-learning capabilities
+2025-08-17 15:20:47,215 - GameBot - INFO - main.py:474 - 🚀 Starting AI Game Bot web server on 0.0.0.0:5000
+2025-08-17 15:20:47,215 - GameBot - ERROR - main.py:477 - Failed to start web server: 'NoneType' object has no attribute 'run'
+2025-08-17 15:20:54,268 - GameBot - INFO - logger.py:74 - Logger 'GameBot' initialized
+2025-08-17 15:20:54,573 - GameBot - INFO - main.py:65 - 🤖 GameBot initialized with autonomous self-learning capabilities
+2025-08-17 15:20:54,693 - GameBot - INFO - main.py:474 - 🚀 Starting AI Game Bot web server on 0.0.0.0:5000
+2025-08-17 15:20:54,693 - GameBot - ERROR - main.py:477 - Failed to start web server: 'NoneType' object has no attribute 'run'
+2025-08-17 15:21:00,747 - GameBot - INFO - logger.py:74 - Logger 'GameBot' initialized
+2025-08-17 15:21:01,030 - GameBot - INFO - main.py:65 - 🤖 GameBot initialized with autonomous self-learning capabilities
+2025-08-17 15:21:01,162 - GameBot - INFO - main.py:474 - 🚀 Starting AI Game Bot web server on 0.0.0.0:5000
+2025-08-17 15:21:01,162 - GameBot - ERROR - main.py:477 - Failed to start web server: 'NoneType' object has no attribute 'run'
+2025-08-17 15:23:10,352 - GameBot - INFO - logger.py:74 - Logger 'GameBot' initialized
+2025-08-17 15:23:13,008 - GameBot - INFO - main.py:65 - 🤖 GameBot initialized with autonomous self-learning capabilities
+2025-08-17 15:23:13,158 - GameBot - INFO - main.py:474 - 🚀 Starting AI Game Bot web server on 0.0.0.0:5000
+2025-08-17 15:23:13,159 - GameBot - ERROR - main.py:478 - Flask app was not created properly
+2025-08-17 15:23:25,544 - GameBot - INFO - logger.py:74 - Logger 'GameBot' initialized
+2025-08-17 15:23:25,827 - GameBot - INFO - main.py:65 - 🤖 GameBot initialized with autonomous self-learning capabilities
+2025-08-17 15:23:25,929 - GameBot - INFO - main.py:474 - 🚀 Starting AI Game Bot web server on 0.0.0.0:5000
+2025-08-17 15:23:25,929 - GameBot - ERROR - main.py:478 - Flask app was not created properly
+2025-08-17 15:23:34,293 - GameBot - INFO - logger.py:74 - Logger 'GameBot' initialized
+2025-08-17 15:23:36,568 - GameBot - INFO - main.py:65 - 🤖 GameBot initialized with autonomous self-learning capabilities
+2025-08-17 15:23:36,663 - GameBot - INFO - main.py:474 - 🚀 Starting AI Game Bot web server on 0.0.0.0:5000
+2025-08-17 15:23:36,663 - GameBot - ERROR - main.py:478 - Flask app was not created properly
+2025-08-17 15:23:43,558 - GameBot - INFO - logger.py:74 - Logger 'GameBot' initialized
+2025-08-17 15:23:43,840 - GameBot - INFO - main.py:65 - 🤖 GameBot initialized with autonomous self-learning capabilities
+2025-08-17 15:23:43,933 - GameBot - INFO - main.py:474 - 🚀 Starting AI Game Bot web server on 0.0.0.0:5000
+2025-08-17 15:23:43,933 - GameBot - ERROR - main.py:478 - Flask app was not created properly
+2025-08-17 15:23:48,868 - GameBot - INFO - logger.py:74 - Logger 'GameBot' initialized
+2025-08-17 15:23:49,159 - GameBot - INFO - main.py:65 - 🤖 GameBot initialized with autonomous self-learning capabilities
+2025-08-17 15:23:49,273 - GameBot - INFO - main.py:474 - 🚀 Starting AI Game Bot web server on 0.0.0.0:5000
+2025-08-17 15:23:49,274 - GameBot - ERROR - main.py:478 - Flask app was not created properly
+2025-08-17 15:23:50,735 - GameBot - INFO - logger.py:74 - Logger 'GameBot' initialized
+2025-08-17 15:23:51,021 - GameBot - INFO - main.py:65 - 🤖 GameBot initialized with autonomous self-learning capabilities
+2025-08-17 15:23:51,110 - GameBot - INFO - main.py:474 - 🚀 Starting AI Game Bot web server on 0.0.0.0:5000
+2025-08-17 15:23:51,110 - GameBot - ERROR - main.py:478 - Flask app was not created properly
+2025-08-17 15:24:00,578 - GameBot - INFO - logger.py:74 - Logger 'GameBot' initialized
+2025-08-17 15:24:00,861 - GameBot - INFO - main.py:65 - 🤖 GameBot initialized with autonomous self-learning capabilities
+2025-08-17 15:24:00,946 - GameBot - INFO - main.py:474 - 🚀 Starting AI Game Bot web server on 0.0.0.0:5000
+2025-08-17 15:24:00,946 - GameBot - ERROR - main.py:478 - Flask app was not created properly
+2025-08-17 15:24:15,293 - GameBot - INFO - logger.py:74 - Logger 'GameBot' initialized
+2025-08-17 15:24:15,608 - GameBot - INFO - main.py:65 - 🤖 GameBot initialized with autonomous self-learning capabilities
+2025-08-17 15:24:15,737 - GameBot - INFO - main.py:474 - 🚀 Starting AI Game Bot web server on 0.0.0.0:5000
+2025-08-17 15:24:15,737 - GameBot - ERROR - main.py:478 - Flask app was not created properly
+2025-08-17 15:25:36,071 - GameBot - INFO - logger.py:74 - Logger 'GameBot' initialized
+2025-08-17 15:25:36,687 - GameBot - INFO - main.py:65 - 🤖 GameBot initialized with autonomous self-learning capabilities
+2025-08-17 15:25:36,835 - GameBot - INFO - main.py:474 - 🚀 Starting AI Game Bot web server on 0.0.0.0:5000
+2025-08-17 15:25:36,835 - GameBot - ERROR - main.py:478 - Flask app was not created properly
+2025-08-17 15:25:38,903 - GameBot - INFO - logger.py:74 - Logger 'GameBot' initialized
+2025-08-17 15:25:39,211 - GameBot - INFO - main.py:65 - 🤖 GameBot initialized with autonomous self-learning capabilities
+2025-08-17 15:25:39,313 - GameBot - INFO - main.py:474 - 🚀 Starting AI Game Bot web server on 0.0.0.0:5000
+2025-08-17 15:25:39,313 - GameBot - ERROR - main.py:478 - Flask app was not created properly
+2025-08-17 15:25:52,839 - GameBot - INFO - logger.py:74 - Logger 'GameBot' initialized
+2025-08-17 15:25:53,167 - GameBot - INFO - main.py:65 - 🤖 GameBot initialized with autonomous self-learning capabilities
+2025-08-17 15:25:53,351 - GameBot - INFO - main.py:474 - 🚀 Starting AI Game Bot web server on 0.0.0.0:5000
+2025-08-17 15:25:53,352 - GameBot - ERROR - main.py:478 - Flask app was not created properly
+2025-08-17 15:26:01,852 - GameBot - INFO - logger.py:74 - Logger 'GameBot' initialized
+2025-08-17 15:26:04,149 - GameBot - INFO - main.py:65 - 🤖 GameBot initialized with autonomous self-learning capabilities
+2025-08-17 15:26:04,239 - GameBot - INFO - main.py:474 - 🚀 Starting AI Game Bot web server on 0.0.0.0:5000
+2025-08-17 15:26:04,239 - GameBot - ERROR - main.py:478 - Flask app was not created properly
+2025-08-17 15:26:18,091 - GameBot - INFO - logger.py:74 - Logger 'GameBot' initialized
+2025-08-17 15:26:18,395 - GameBot - INFO - main.py:65 - 🤖 GameBot initialized with autonomous self-learning capabilities
+2025-08-17 15:26:18,592 - GameBot - INFO - main.py:474 - 🚀 Starting AI Game Bot web server on 0.0.0.0:5000
+2025-08-17 15:26:18,594 - GameBot - ERROR - main.py:478 - Flask app was not created properly
+2025-08-17 15:26:30,628 - GameBot - INFO - logger.py:74 - Logger 'GameBot' initialized
+2025-08-17 15:26:32,903 - GameBot - INFO - main.py:65 - 🤖 GameBot initialized with autonomous self-learning capabilities
+2025-08-17 15:26:33,029 - GameBot - INFO - main.py:474 - 🚀 Starting AI Game Bot web server on 0.0.0.0:5000
+2025-08-17 15:26:33,030 - GameBot - ERROR - main.py:478 - Flask app was not created properly
+2025-08-17 15:26:57,291 - GameBot - INFO - logger.py:74 - Logger 'GameBot' initialized
+2025-08-17 15:26:57,563 - GameBot - INFO - main.py:65 - 🤖 GameBot initialized with autonomous self-learning capabilities
+2025-08-17 15:26:57,671 - GameBot - INFO - main.py:474 - 🚀 Starting AI Game Bot web server on 0.0.0.0:5000
+2025-08-17 15:26:57,671 - GameBot - ERROR - main.py:478 - Flask app was not created properly
+2025-08-17 15:27:10,755 - GameBot - INFO - logger.py:74 - Logger 'GameBot' initialized
+2025-08-17 15:27:11,049 - GameBot - INFO - main.py:65 - 🤖 GameBot initialized with autonomous self-learning capabilities
+2025-08-17 15:27:11,156 - GameBot - INFO - main.py:474 - 🚀 Starting AI Game Bot web server on 0.0.0.0:5000
+2025-08-17 15:27:11,156 - GameBot - ERROR - main.py:478 - Flask app was not created properly
+2025-08-17 15:28:48,297 - GameBot - INFO - logger.py:74 - Logger 'GameBot' initialized
+2025-08-17 15:28:50,970 - GameBot - INFO - main.py:65 - 🤖 GameBot initialized with autonomous self-learning capabilities
+2025-08-17 15:28:53,369 - GameBot - INFO - logger.py:74 - Logger 'GameBot' initialized
+2025-08-17 15:28:53,672 - GameBot - INFO - main.py:65 - 🤖 GameBot initialized with autonomous self-learning capabilities
+2025-08-17 15:28:53,777 - GameBot - INFO - main.py:474 - 🚀 Starting AI Game Bot web server on 0.0.0.0:5000
+2025-08-17 15:28:53,777 - GameBot - ERROR - main.py:478 - Flask app was not created properly
+2025-08-17 15:30:59,892 - GameBot - INFO - logger.py:74 - Logger 'GameBot' initialized
+2025-08-17 15:31:02,575 - GameBot - INFO - main.py:65 - 🤖 GameBot initialized with autonomous self-learning capabilities
+2025-08-17 15:31:20,432 - GameBot - INFO - logger.py:74 - Logger 'GameBot' initialized
+2025-08-17 15:31:20,707 - GameBot - INFO - main.py:65 - 🤖 GameBot initialized with autonomous self-learning capabilities
+2025-08-17 15:31:46,664 - GameBot - INFO - logger.py:74 - Logger 'GameBot' initialized
+2025-08-17 15:31:46,969 - GameBot - INFO - main.py:65 - 🤖 GameBot initialized with autonomous self-learning capabilities
+2025-08-17 15:32:46,677 - GameBot - INFO - logger.py:74 - Logger 'GameBot' initialized
+2025-08-17 15:32:46,948 - GameBot - INFO - main.py:65 - 🤖 GameBot initialized with autonomous self-learning capabilities
+2025-08-17 15:35:19,535 - GameBot - INFO - logger.py:74 - Logger 'GameBot' initialized
+2025-08-17 15:35:22,179 - GameBot - INFO - main.py:65 - 🤖 GameBot initialized with autonomous self-learning capabilities
+2025-08-17 15:35:35,267 - GameBot - INFO - logger.py:74 - Logger 'GameBot' initialized
+2025-08-17 15:35:35,550 - GameBot - INFO - main.py:65 - 🤖 GameBot initialized with autonomous self-learning capabilities
+2025-08-17 15:36:58,163 - GameBot - INFO - logger.py:74 - Logger 'GameBot' initialized
+2025-08-17 15:37:00,781 - GameBot - INFO - main.py:65 - 🤖 GameBot initialized with autonomous self-learning capabilities
+2025-08-17 15:40:27,360 - GameBot - INFO - logger.py:74 - Logger 'GameBot' initialized
+2025-08-17 15:40:29,993 - GameBot - INFO - main.py:65 - 🤖 GameBot initialized with autonomous self-learning capabilities
+2025-08-17 15:43:51,535 - GameBot - INFO - logger.py:74 - Logger 'GameBot' initialized
+2025-08-17 15:43:54,188 - GameBot - INFO - main.py:65 - 🤖 GameBot initialized with autonomous self-learning capabilities
+2025-08-17 15:47:07,002 - GameBot - INFO - logger.py:74 - Logger 'GameBot' initialized
+2025-08-17 15:47:09,636 - GameBot - INFO - main.py:65 - 🤖 GameBot initialized with autonomous self-learning capabilities
+2025-08-17 15:49:09,748 - GameBot - INFO - logger.py:74 - Logger 'GameBot' initialized
+2025-08-17 15:49:12,386 - GameBot - INFO - main.py:65 - 🤖 GameBot initialized with autonomous self-learning capabilities
+2025-08-17 15:50:07,572 - GameBot - INFO - logger.py:74 - Logger 'GameBot' initialized
+2025-08-17 15:50:07,875 - GameBot - INFO - main.py:65 - 🤖 GameBot initialized with autonomous self-learning capabilities
+2025-08-17 15:52:25,736 - GameBot - INFO - logger.py:74 - Logger 'GameBot' initialized
+2025-08-17 15:52:28,369 - GameBot - INFO - main.py:65 - 🤖 GameBot initialized with autonomous self-learning capabilities
+2025-08-17 15:52:30,187 - GameBot - INFO - logger.py:74 - Logger 'GameBot' initialized
+2025-08-17 15:52:32,498 - GameBot - INFO - main.py:65 - 🤖 GameBot initialized with autonomous self-learning capabilities
+2025-08-17 15:53:12,982 - GameBot - INFO - logger.py:74 - Logger 'GameBot' initialized
+2025-08-17 15:53:13,270 - GameBot - INFO - main.py:65 - 🤖 GameBot initialized with autonomous self-learning capabilities
+2025-08-17 15:54:56,224 - GameBot - INFO - logger.py:74 - Logger 'GameBot' initialized
+2025-08-17 15:54:58,844 - GameBot - INFO - main.py:65 - 🤖 GameBot initialized with autonomous self-learning capabilities
+2025-08-17 15:54:58,915 - GameBot - INFO - ps99_api_integration.py:108 - Refreshing all PS99 API data...
+2025-08-17 15:54:59,465 - GameBot - INFO - ps99_api_integration.py:71 - PS99 pets data updated: 2385 items
+2025-08-17 15:54:59,824 - GameBot - INFO - ps99_api_integration.py:71 - PS99 eggs data updated: 759 items
+2025-08-17 15:55:00,066 - GameBot - INFO - ps99_api_integration.py:71 - PS99 zones data updated: 274 items
+2025-08-17 15:55:00,270 - GameBot - INFO - ps99_api_integration.py:71 - PS99 worlds data updated: 4 items
+2025-08-17 15:55:00,271 - GameBot - INFO - ps99_api_integration.py:307 - PS99 API integration initialized successfully
+2025-08-17 15:55:00,276 - GameBot - INFO - main.py:474 - 🚀 Starting AI Game Bot web server on 0.0.0.0:5000
+2025-08-17 15:55:00,840 - GameBot - INFO - logger.py:74 - Logger 'GameBot' initialized
+2025-08-17 15:55:01,167 - GameBot - INFO - main.py:65 - 🤖 GameBot initialized with autonomous self-learning capabilities
+2025-08-17 15:55:01,252 - GameBot - INFO - ps99_api_integration.py:108 - Refreshing all PS99 API data...
+2025-08-17 15:55:01,278 - GameBot - INFO - ps99_api_integration.py:307 - PS99 API integration initialized successfully
+2025-08-17 15:55:01,283 - GameBot - INFO - main.py:474 - 🚀 Starting AI Game Bot web server on 0.0.0.0:5000
+2025-08-17 15:56:34,740 - GameBot - INFO - logger.py:74 - Logger 'GameBot' initialized
+2025-08-17 15:56:37,391 - GameBot - INFO - main.py:65 - 🤖 GameBot initialized with autonomous self-learning capabilities
+2025-08-17 15:56:37,458 - GameBot - INFO - ps99_api_integration.py:108 - Refreshing all PS99 API data...
+2025-08-17 15:56:37,486 - GameBot - INFO - ps99_api_integration.py:307 - PS99 API integration initialized successfully
+2025-08-17 15:56:37,491 - GameBot - INFO - main.py:474 - 🚀 Starting AI Game Bot web server on 0.0.0.0:5000
+2025-08-17 15:56:42,448 - GameBot - INFO - logger.py:74 - Logger 'GameBot' initialized
+2025-08-17 15:56:44,751 - GameBot - INFO - main.py:65 - 🤖 GameBot initialized with autonomous self-learning capabilities
+2025-08-17 15:56:44,816 - GameBot - INFO - ps99_api_integration.py:108 - Refreshing all PS99 API data...
+2025-08-17 15:56:44,840 - GameBot - INFO - ps99_api_integration.py:307 - PS99 API integration initialized successfully
+2025-08-17 15:56:44,844 - GameBot - INFO - main.py:474 - 🚀 Starting AI Game Bot web server on 0.0.0.0:5000
+2025-08-17 15:56:50,583 - GameBot - INFO - logger.py:74 - Logger 'GameBot' initialized
+2025-08-17 15:56:50,866 - GameBot - INFO - main.py:65 - 🤖 GameBot initialized with autonomous self-learning capabilities
+2025-08-17 15:56:50,938 - GameBot - INFO - ps99_api_integration.py:108 - Refreshing all PS99 API data...
+2025-08-17 15:56:50,967 - GameBot - INFO - ps99_api_integration.py:307 - PS99 API integration initialized successfully
+2025-08-17 15:56:50,972 - GameBot - INFO - main.py:474 - 🚀 Starting AI Game Bot web server on 0.0.0.0:5000
+2025-08-17 15:56:51,697 - GameBot - INFO - logger.py:74 - Logger 'GameBot' initialized
+2025-08-17 15:56:51,977 - GameBot - INFO - main.py:65 - 🤖 GameBot initialized with autonomous self-learning capabilities
+2025-08-17 15:56:52,043 - GameBot - INFO - ps99_api_integration.py:108 - Refreshing all PS99 API data...
+2025-08-17 15:56:52,069 - GameBot - INFO - ps99_api_integration.py:307 - PS99 API integration initialized successfully
+2025-08-17 15:56:52,074 - GameBot - INFO - main.py:474 - 🚀 Starting AI Game Bot web server on 0.0.0.0:5000
+2025-08-17 16:03:58,656 - GameBot - INFO - logger.py:74 - Logger 'GameBot' initialized
+2025-08-17 16:03:59,305 - GameBot - INFO - main.py:65 - 🤖 GameBot initialized with autonomous self-learning capabilities
+2025-08-17 16:11:25,621 - GameBot - INFO - logger.py:74 - Logger 'GameBot' initialized
+2025-08-17 16:13:08,841 - GameBot - INFO - logger.py:74 - Logger 'GameBot' initialized
+2025-08-17 16:13:09,440 - GameBot - INFO - main.py:65 - 🤖 GameBot initialized with autonomous self-learning capabilities
+2025-08-17 16:24:59,440 - GameBot - INFO - logger.py:74 - Logger 'GameBot' initialized
+2025-08-17 16:25:00,098 - GameBot - INFO - main.py:65 - 🤖 GameBot initialized with autonomous self-learning capabilities
+2025-08-17 16:27:08,767 - GameBot - INFO - logger.py:74 - Logger 'GameBot' initialized
+2025-08-17 16:27:11,347 - GameBot - INFO - main.py:65 - 🤖 GameBot initialized with autonomous self-learning capabilities
+2025-08-17 16:28:31,148 - GameBot - INFO - main.py:170 - AI learning mode started
+2025-08-17 16:37:38,382 - GameBot - INFO - logger.py:74 - Logger 'GameBot' initialized
+2025-08-17 16:37:39,005 - GameBot - INFO - main.py:60 - 🐍 SerpentAI Enhanced Vision System activated
+2025-08-17 16:37:39,010 - GameBot - INFO - main.py:70 - 🐍 SerpentAI Reinforcement Learning System activated
+2025-08-17 16:37:39,019 - GameBot - INFO - main.py:88 - 🤖 GameBot initialized with autonomous self-learning capabilities
+2025-08-17 16:38:40,741 - GameBot - INFO - logger.py:74 - Logger 'GameBot' initialized
+2025-08-17 16:38:41,038 - GameBot - INFO - main.py:60 - 🐍 SerpentAI Enhanced Vision System activated
+2025-08-17 16:38:41,041 - GameBot - INFO - main.py:70 - 🐍 SerpentAI Reinforcement Learning System activated
+2025-08-17 16:38:41,046 - GameBot - INFO - main.py:88 - 🤖 GameBot initialized with autonomous self-learning capabilities
+2025-08-17 16:38:52,806 - GameBot - INFO - main.py:193 - AI learning mode started
+2025-08-17 16:47:56,189 - GameBot - INFO - logger.py:74 - Logger 'GameBot' initialized
+2025-08-17 16:47:56,846 - GameBot - WARNING - main.py:62 - SerpentAI Vision not available: ~/.Xauthority: [Errno 2] No such file or directory: '/home/runner/.Xauthority'
+2025-08-17 16:47:56,851 - GameBot - INFO - main.py:70 - 🐍 SerpentAI Reinforcement Learning System activated
+2025-08-17 16:47:56,858 - GameBot - INFO - main.py:88 - 🤖 GameBot initialized with autonomous self-learning capabilities
+2025-08-17 16:51:47,515 - GameBot - INFO - logger.py:74 - Logger 'GameBot' initialized
+2025-08-17 16:51:48,123 - GameBot - WARNING - main.py:62 - SerpentAI Vision not available: ~/.Xauthority: [Errno 2] No such file or directory: '/home/runner/.Xauthority'
+2025-08-17 16:51:48,134 - GameBot - INFO - main.py:70 - 🐍 SerpentAI Reinforcement Learning System activated
+2025-08-17 16:51:48,144 - GameBot - INFO - main.py:88 - 🤖 GameBot initialized with autonomous self-learning capabilities
+2025-08-17 16:57:32,681 - GameBot - INFO - logger.py:74 - Logger 'GameBot' initialized
+2025-08-17 16:57:33,312 - GameBot - WARNING - main.py:62 - SerpentAI Vision not available: ~/.Xauthority: [Errno 2] No such file or directory: '/home/runner/.Xauthority'
+2025-08-17 16:57:33,322 - GameBot - INFO - main.py:70 - 🐍 SerpentAI Reinforcement Learning System activated
+2025-08-17 16:57:33,333 - GameBot - INFO - main.py:88 - 🤖 GameBot initialized with autonomous self-learning capabilities
+2025-08-17 17:07:44,095 - GameBot - INFO - logger.py:74 - Logger 'GameBot' initialized
+2025-08-17 17:11:56,331 - GameBot - INFO - logger.py:74 - Logger 'GameBot' initialized
+2025-08-17 17:14:44,158 - GameBot - INFO - logger.py:74 - Logger 'GameBot' initialized
+2025-08-17 17:35:16,639 - GameBot - INFO - logger.py:74 - Logger 'GameBot' initialized
+2025-08-17 17:43:25,117 - GameBot - INFO - logger.py:74 - Logger 'GameBot' initialized
+2025-08-17 17:54:23,677 - GameBot - INFO - logger.py:74 - Logger 'GameBot' initialized
+2025-08-17 17:57:29,038 - GameBot - INFO - logger.py:74 - Logger 'GameBot' initialized
+2025-08-17 17:59:20,881 - GameBot - INFO - logger.py:74 - Logger 'GameBot' initialized
+2025-08-17 17:59:31,325 - GameBot - INFO - logger.py:74 - Logger 'GameBot' initialized
+2025-08-17 17:59:35,090 - GameBot - INFO - logger.py:74 - Logger 'GameBot' initialized
+2025-08-17 18:01:40,269 - GameBot - INFO - logger.py:74 - Logger 'GameBot' initialized
+2025-08-17 18:05:04,689 - GameBot - INFO - logger.py:74 - Logger 'GameBot' initialized
+2025-08-17 18:07:33,697 - GameBot - INFO - logger.py:74 - Logger 'GameBot' initialized
+2025-08-17 18:11:23,653 - GameBot - INFO - logger.py:74 - Logger 'GameBot' initialized
+2025-08-17 18:12:18,406 - GameBot - INFO - logger.py:74 - Logger 'GameBot' initialized
+2025-08-17 18:12:26,256 - GameBot - INFO - logger.py:74 - Logger 'GameBot' initialized
+2025-08-17 18:14:36,059 - GameBot - INFO - logger.py:74 - Logger 'GameBot' initialized
+2025-08-17 23:52:37,493 - GameBot - INFO - logger.py:74 - Logger 'GameBot' initialized
+2025-08-17 23:56:25,642 - GameBot - INFO - logger.py:74 - Logger 'GameBot' initialized
+2025-08-17 23:56:27,331 - GameBot - INFO - logger.py:74 - Logger 'GameBot' initialized
+2025-08-17 23:57:57,781 - GameBot - INFO - logger.py:74 - Logger 'GameBot' initialized
+2025-08-17 23:58:16,393 - GameBot - INFO - logger.py:74 - Logger 'GameBot' initialized
+2025-08-17 23:58:16,408 - GameBot - WARNING - main.py:62 - SerpentAI Vision not available: 'SerpentEnhancedVision' object has no attribute 'start_continuous_analysis'
+2025-08-17 23:58:16,414 - GameBot - INFO - main.py:70 - 🐍 SerpentAI Reinforcement Learning System activated
+2025-08-17 23:58:16,437 - GameBot - INFO - main.py:88 - 🤖 GameBot initialized with autonomous self-learning capabilities
+2025-08-18 00:56:45,605 - GameBot - INFO - logger.py:74 - Logger 'GameBot' initialized
+2025-08-18 00:56:45,638 - GameBot - WARNING - main.py:62 - SerpentAI Vision not available: 'SerpentEnhancedVision' object has no attribute 'start_continuous_analysis'
+2025-08-18 00:56:45,643 - GameBot - INFO - main.py:70 - 🐍 SerpentAI Reinforcement Learning System activated
+2025-08-18 00:56:45,660 - GameBot - INFO - main.py:88 - 🤖 GameBot initialized with autonomous self-learning capabilities
+2025-08-18 00:56:46,034 - GameBot - INFO - logger.py:74 - Logger 'GameBot' initialized
+2025-08-18 00:56:46,049 - GameBot - WARNING - main.py:62 - SerpentAI Vision not available: 'SerpentEnhancedVision' object has no attribute 'start_continuous_analysis'
+2025-08-18 00:56:46,057 - GameBot - INFO - main.py:70 - 🐍 SerpentAI Reinforcement Learning System activated
+2025-08-18 00:56:46,110 - GameBot - INFO - main.py:88 - 🤖 GameBot initialized with autonomous self-learning capabilities
+2025-08-18 01:06:19,133 - GameBot - INFO - main.py:193 - AI learning mode started
+2025-08-18 01:33:08,933 - GameBot - INFO - logger.py:74 - Logger 'GameBot' initialized
+2025-08-18 01:33:08,953 - GameBot - WARNING - main.py:62 - SerpentAI Vision not available: 'SerpentEnhancedVision' object has no attribute 'start_continuous_analysis'
+2025-08-18 01:33:08,956 - GameBot - INFO - main.py:70 - 🐍 SerpentAI Reinforcement Learning System activated
+2025-08-18 01:33:08,964 - GameBot - INFO - main.py:88 - 🤖 GameBot initialized with autonomous self-learning capabilities
+2025-08-18 01:33:08,976 - GameBot - INFO - logger.py:74 - Logger 'GameBot' initialized
+2025-08-18 01:33:08,984 - GameBot - WARNING - main.py:62 - SerpentAI Vision not available: 'SerpentEnhancedVision' object has no attribute 'start_continuous_analysis'
+2025-08-18 01:33:08,986 - GameBot - INFO - main.py:70 - 🐍 SerpentAI Reinforcement Learning System activated
+2025-08-18 01:33:08,999 - GameBot - INFO - main.py:88 - 🤖 GameBot initialized with autonomous self-learning capabilities
+2025-08-18 01:42:22,737 - GameBot - INFO - logger.py:74 - Logger 'GameBot' initialized
+2025-08-18 01:42:22,745 - GameBot - WARNING - main.py:62 - SerpentAI Vision not available: 'SerpentEnhancedVision' object has no attribute 'start_continuous_analysis'
+2025-08-18 01:42:22,747 - GameBot - INFO - main.py:70 - 🐍 SerpentAI Reinforcement Learning System activated
+2025-08-18 01:42:22,762 - GameBot - INFO - main.py:88 - 🤖 GameBot initialized with autonomous self-learning capabilities
+2025-08-18 01:52:41,737 - GameBot - INFO - logger.py:74 - Logger 'GameBot' initialized
+2025-08-18 01:52:41,749 - GameBot - WARNING - main.py:62 - SerpentAI Vision not available: 'SerpentEnhancedVision' object has no attribute 'start_continuous_analysis'
+2025-08-18 01:52:41,752 - GameBot - INFO - main.py:70 - 🐍 SerpentAI Reinforcement Learning System activated
+2025-08-18 01:52:41,755 - GameBot - INFO - main.py:88 - 🤖 GameBot initialized with autonomous self-learning capabilities
+2025-08-18 01:54:12,384 - GameBot - INFO - logger.py:74 - Logger 'GameBot' initialized
+2025-08-18 01:54:12,397 - GameBot - WARNING - main.py:62 - SerpentAI Vision not available: 'SerpentEnhancedVision' object has no attribute 'start_continuous_analysis'
+2025-08-18 01:54:12,400 - GameBot - INFO - main.py:70 - 🐍 SerpentAI Reinforcement Learning System activated
+2025-08-18 01:54:12,421 - GameBot - INFO - main.py:88 - 🤖 GameBot initialized with autonomous self-learning capabilities
+2025-08-18 02:01:11,069 - GameBot - INFO - logger.py:74 - Logger 'GameBot' initialized
+2025-08-18 02:01:11,118 - GameBot - WARNING - main.py:62 - SerpentAI Vision not available: 'SerpentEnhancedVision' object has no attribute 'start_continuous_analysis'
+2025-08-18 02:01:11,126 - GameBot - INFO - main.py:70 - 🐍 SerpentAI Reinforcement Learning System activated
+2025-08-18 02:01:11,166 - GameBot - INFO - main.py:88 - 🤖 GameBot initialized with autonomous self-learning capabilities
+2025-08-18 02:01:44,542 - GameBot - INFO - logger.py:74 - Logger 'GameBot' initialized
+2025-08-18 02:01:44,554 - GameBot - WARNING - main.py:62 - SerpentAI Vision not available: 'SerpentEnhancedVision' object has no attribute 'start_continuous_analysis'
+2025-08-18 02:01:44,557 - GameBot - INFO - main.py:70 - 🐍 SerpentAI Reinforcement Learning System activated
+2025-08-18 02:01:44,576 - GameBot - INFO - main.py:88 - 🤖 GameBot initialized with autonomous self-learning capabilities
+2025-08-18 02:01:44,612 - GameBot - INFO - logger.py:74 - Logger 'GameBot' initialized
+2025-08-18 02:01:44,624 - GameBot - WARNING - main.py:62 - SerpentAI Vision not available: 'SerpentEnhancedVision' object has no attribute 'start_continuous_analysis'
+2025-08-18 02:01:44,626 - GameBot - INFO - main.py:70 - 🐍 SerpentAI Reinforcement Learning System activated
+2025-08-18 02:01:44,629 - GameBot - INFO - main.py:88 - 🤖 GameBot initialized with autonomous self-learning capabilities
+2025-08-18 02:03:48,152 - GameBot - INFO - logger.py:74 - Logger 'GameBot' initialized
+2025-08-18 02:03:48,165 - GameBot - WARNING - main.py:62 - SerpentAI Vision not available: 'SerpentEnhancedVision' object has no attribute 'start_continuous_analysis'
+2025-08-18 02:03:48,168 - GameBot - INFO - main.py:70 - 🐍 SerpentAI Reinforcement Learning System activated
+2025-08-18 02:03:48,171 - GameBot - INFO - main.py:88 - 🤖 GameBot initialized with autonomous self-learning capabilities
+2025-08-18 02:05:19,411 - GameBot - INFO - logger.py:74 - Logger 'GameBot' initialized
+2025-08-18 02:05:19,457 - GameBot - WARNING - main.py:62 - SerpentAI Vision not available: 'SerpentEnhancedVision' object has no attribute 'start_continuous_analysis'
+2025-08-18 02:05:19,463 - GameBot - INFO - main.py:70 - 🐍 SerpentAI Reinforcement Learning System activated
+2025-08-18 02:05:19,497 - GameBot - INFO - main.py:88 - 🤖 GameBot initialized with autonomous self-learning capabilities
+2025-08-18 02:06:28,860 - GameBot - INFO - logger.py:74 - Logger 'GameBot' initialized
+2025-08-18 02:06:28,884 - GameBot - INFO - main.py:60 - 🐍 SerpentAI Enhanced Vision System activated
+2025-08-18 02:06:28,888 - GameBot - INFO - main.py:70 - 🐍 SerpentAI Reinforcement Learning System activated
+2025-08-18 02:06:28,907 - GameBot - INFO - main.py:88 - 🤖 GameBot initialized with autonomous self-learning capabilities
+2025-08-18 02:07:46,518 - GameBot - INFO - logger.py:74 - Logger 'GameBot' initialized
+2025-08-18 02:07:46,531 - GameBot - INFO - main.py:60 - 🐍 SerpentAI Enhanced Vision System activated
+2025-08-18 02:07:46,534 - GameBot - INFO - main.py:70 - 🐍 SerpentAI Reinforcement Learning System activated
+2025-08-18 02:07:46,537 - GameBot - INFO - main.py:88 - 🤖 GameBot initialized with autonomous self-learning capabilities
+2025-08-18 02:09:17,328 - GameBot - INFO - logger.py:74 - Logger 'GameBot' initialized
+2025-08-18 02:09:17,340 - GameBot - INFO - main.py:60 - 🐍 SerpentAI Enhanced Vision System activated
+2025-08-18 02:09:17,342 - GameBot - INFO - main.py:70 - 🐍 SerpentAI Reinforcement Learning System activated
+2025-08-18 02:09:17,359 - GameBot - INFO - main.py:88 - 🤖 GameBot initialized with autonomous self-learning capabilities
+2025-08-18 02:10:56,735 - GameBot - INFO - logger.py:74 - Logger 'GameBot' initialized
+2025-08-18 02:10:56,752 - GameBot - INFO - main.py:60 - 🐍 SerpentAI Enhanced Vision System activated
+2025-08-18 02:10:56,757 - GameBot - INFO - main.py:70 - 🐍 SerpentAI Reinforcement Learning System activated
+2025-08-18 02:10:56,790 - GameBot - INFO - main.py:88 - 🤖 GameBot initialized with autonomous self-learning capabilities
+2025-08-18 02:10:58,100 - GameBot - INFO - logger.py:74 - Logger 'GameBot' initialized
+2025-08-18 02:10:58,116 - GameBot - INFO - main.py:60 - 🐍 SerpentAI Enhanced Vision System activated
+2025-08-18 02:10:58,118 - GameBot - INFO - main.py:70 - 🐍 SerpentAI Reinforcement Learning System activated
+2025-08-18 02:10:58,121 - GameBot - INFO - main.py:88 - 🤖 GameBot initialized with autonomous self-learning capabilities
+2025-08-18 02:12:47,627 - GameBot - INFO - logger.py:74 - Logger 'GameBot' initialized
+2025-08-18 02:12:47,637 - GameBot - INFO - main.py:60 - 🐍 SerpentAI Enhanced Vision System activated
+2025-08-18 02:12:47,641 - GameBot - INFO - main.py:70 - 🐍 SerpentAI Reinforcement Learning System activated
+2025-08-18 02:12:47,672 - GameBot - INFO - main.py:88 - 🤖 GameBot initialized with autonomous self-learning capabilities
+2025-08-18 02:13:07,550 - GameBot - INFO - logger.py:74 - Logger 'GameBot' initialized
+2025-08-18 02:13:07,561 - GameBot - INFO - main.py:60 - 🐍 SerpentAI Enhanced Vision System activated
+2025-08-18 02:13:07,563 - GameBot - INFO - main.py:70 - 🐍 SerpentAI Reinforcement Learning System activated
+2025-08-18 02:13:07,580 - GameBot - INFO - main.py:88 - 🤖 GameBot initialized with autonomous self-learning capabilities
+2025-08-18 02:26:09,717 - GameBot - INFO - logger.py:74 - Logger 'GameBot' initialized
+2025-08-18 02:26:22,489 - GameBot - INFO - logger.py:74 - Logger 'GameBot' initialized
+2025-08-18 02:26:22,504 - GameBot - INFO - main.py:73 - 🐍 SerpentAI Enhanced Vision System activated
+2025-08-18 02:26:22,508 - GameBot - INFO - main.py:83 - 🐍 SerpentAI Reinforcement Learning System activated
+2025-08-18 02:26:22,534 - GameBot - INFO - main.py:101 - 🤖 GameBot initialized with autonomous self-learning capabilities
+2025-08-18 02:32:29,076 - GameBot - INFO - logger.py:74 - Logger 'GameBot' initialized
+2025-08-18 02:32:29,090 - GameBot - INFO - main.py:99 - 🐍 SerpentAI Enhanced Vision System activated
+2025-08-18 02:32:29,092 - GameBot - INFO - main.py:109 - 🐍 SerpentAI Reinforcement Learning System activated
+2025-08-18 02:32:29,108 - GameBot - INFO - main.py:127 - 🤖 GameBot initialized with autonomous self-learning capabilities
+2025-08-18 02:33:10,001 - GameBot - INFO - logger.py:74 - Logger 'GameBot' initialized
+2025-08-18 02:33:10,015 - GameBot - INFO - main.py:99 - 🐍 SerpentAI Enhanced Vision System activated
+2025-08-18 02:33:10,018 - GameBot - INFO - main.py:109 - 🐍 SerpentAI Reinforcement Learning System activated
+2025-08-18 02:33:10,032 - GameBot - INFO - main.py:127 - 🤖 GameBot initialized with autonomous self-learning capabilities
+2025-08-18 02:38:23,033 - GameBot - INFO - logger.py:74 - Logger 'GameBot' initialized
+2025-08-18 02:38:23,071 - GameBot - INFO - main.py:126 - 🐍 SerpentAI Enhanced Vision System activated
+2025-08-18 02:38:23,083 - GameBot - INFO - main.py:136 - 🐍 SerpentAI Reinforcement Learning System activated
+2025-08-18 02:38:23,102 - GameBot - INFO - main.py:154 - 🤖 GameBot initialized with autonomous self-learning capabilities

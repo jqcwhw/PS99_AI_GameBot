@@ -1,0 +1,20 @@
+2025-08-17 15:20:47,215 - GameBot - ERROR - main.py:477 - Failed to start web server: 'NoneType' object has no attribute 'run'
+2025-08-17 15:20:54,693 - GameBot - ERROR - main.py:477 - Failed to start web server: 'NoneType' object has no attribute 'run'
+2025-08-17 15:21:01,162 - GameBot - ERROR - main.py:477 - Failed to start web server: 'NoneType' object has no attribute 'run'
+2025-08-17 15:23:13,159 - GameBot - ERROR - main.py:478 - Flask app was not created properly
+2025-08-17 15:23:25,929 - GameBot - ERROR - main.py:478 - Flask app was not created properly
+2025-08-17 15:23:36,663 - GameBot - ERROR - main.py:478 - Flask app was not created properly
+2025-08-17 15:23:43,933 - GameBot - ERROR - main.py:478 - Flask app was not created properly
+2025-08-17 15:23:49,274 - GameBot - ERROR - main.py:478 - Flask app was not created properly
+2025-08-17 15:23:51,110 - GameBot - ERROR - main.py:478 - Flask app was not created properly
+2025-08-17 15:24:00,946 - GameBot - ERROR - main.py:478 - Flask app was not created properly
+2025-08-17 15:24:15,737 - GameBot - ERROR - main.py:478 - Flask app was not created properly
+2025-08-17 15:25:36,835 - GameBot - ERROR - main.py:478 - Flask app was not created properly
+2025-08-17 15:25:39,313 - GameBot - ERROR - main.py:478 - Flask app was not created properly
+2025-08-17 15:25:53,352 - GameBot - ERROR - main.py:478 - Flask app was not created properly
+2025-08-17 15:26:04,239 - GameBot - ERROR - main.py:478 - Flask app was not created properly
+2025-08-17 15:26:18,594 - GameBot - ERROR - main.py:478 - Flask app was not created properly
+2025-08-17 15:26:33,030 - GameBot - ERROR - main.py:478 - Flask app was not created properly
+2025-08-17 15:26:57,671 - GameBot - ERROR - main.py:478 - Flask app was not created properly
+2025-08-17 15:27:11,156 - GameBot - ERROR - main.py:478 - Flask app was not created properly
+2025-08-17 15:28:53,777 - GameBot - ERROR - main.py:478 - Flask app was not created properly
